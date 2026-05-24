@@ -6,20 +6,20 @@ export function ProjectCard({ project }: { project: Project }) {
   return (
     <Link
       href={`/projects/${project.slug}`}
-      className="mb-6 flex flex-col space-y-1"
+      className="group block py-2 focus-visible:outline-none"
     >
-      <div className="flex w-full flex-col space-x-0 md:flex-row md:space-x-2">
-        <p className="w-[140px] tabular-nums text-neutral-600 dark:text-neutral-400">
-          {project.timeframe}
-        </p>
+      <div className="flex w-full flex-col gap-2 md:flex-row md:items-start md:justify-between md:gap-8">
         <div className="min-w-0 flex-1">
-          <p className="tracking-tight text-neutral-900 dark:text-neutral-100">
-            {project.name}
+          <p className="tracking-tight text-neutral-900 underline-offset-4 group-hover:underline group-focus-visible:underline dark:text-neutral-100">
+              {project.name}
           </p>
-          <p className="text-neutral-600 dark:text-neutral-400">
+          <p className="mt-1 text-neutral-600 dark:text-neutral-400">
             {project.summary}
           </p>
         </div>
+        <p className="shrink-0 tabular-nums text-neutral-500 dark:text-neutral-500 md:pt-0.5 md:text-right">
+          {project.timeframe}
+        </p>
       </div>
     </Link>
   )

@@ -25,7 +25,7 @@ export const projects: Project[] = [
     timeframe: 'Most recent project',
     publishedAt: '2026-05-16',
     summary:
-      'A free, privacy focused and local-first strength training app I built to solve my own frustrations with workout trackers.',
+      'A free, open-source, privacy focused, local-first strength training app I built to solve my own frustrations with workout trackers.',
     description: [
       'I built Max because the apps I kept reaching for, especially Strong and Hevy, gated useful features like analytics and routines behind subscriptions and pushed everyone through account creation.',
       'Max takes a different approach. It is free, local-first, and designed to work without requiring an account, while still giving you serious workout logging, progression tracking, and useful analytics.',
@@ -70,7 +70,11 @@ export const projects: Project[] = [
       {
         href: 'https://apps.apple.com/ie/app/max-unlimited-workout-tracker/id6755911915',
         label: 'Visit iOS store',
-      }
+      },
+      {
+        href: 'https://github.com/seandowdall/max',
+        label: 'View source on GitHub',
+      },
     ],
     status: 'Live',
   },

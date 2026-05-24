@@ -45,7 +45,7 @@ export default function Page() {
         <a href="/projects/max" className="underline underline-offset-4">
           Max
         </a>
-        , a free local-first fitness app.
+        , a free, open-source, local-first fitness app.
       </p>
       <p className="mb-8">
         I also enjoy developer productivity, good tooling, and tightening up

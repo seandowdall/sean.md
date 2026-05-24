@@ -6,7 +6,7 @@ export function ProjectList() {
   const projects = getProjects()
 
   return (
-    <div>
+    <div className="space-y-2">
       {projects.map((project) => (
         <ProjectCard key={project.slug} project={project} />
       ))}
